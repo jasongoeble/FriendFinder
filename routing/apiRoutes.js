@@ -15,28 +15,28 @@ app.use(bodyParser.json());
 
 // Displays results from survey answers
 app.get("/api/friends/:friend", function(req, res) {
-    var chosen = req.params.reservation;
+    var chosen = req.params.friends;
   
     console.log(chosen);
   
-    for (var i = 0; i < reservation.length; i++) {
-      if (chosen === reservation[i].fullname) {
-        return res.json(reservation[i]);
+    for (var i = 0; i < friends.length; i++) {
+      if (chosen === friends[i].fullname) {
+        return res.json(friends[i]);
       }
     }
   
-    return res.send("No character found");
+    return res.send("No friend found!  You are friendless!");
   
   });
   
   // Posts the survey results
   app.post("/api/friends", function(req, res) {
-    var newReservation = req.body;
+    var newFriend = req.body;
   
-    console.log(newReservation);
+    console.log(newFriend);
   
-    reservation.push(newReservation);
+    Friends.push(newFriend);
   
-    res.json(newReservation);
+    res.json(newFriend);
   });
   

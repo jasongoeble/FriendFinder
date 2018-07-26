@@ -314,11 +314,12 @@
     {
       event.preventDefault();
 
-    /*
       // Form validation
       function validateForm() 
       {
+        //assume everything is filled out
         varvValid = true;
+
         //checks that the to two form fields at the top of the survey are not empty
         $(".form-control").each(function() 
         {
@@ -343,7 +344,7 @@
     
       //if isValid is true
       if (validateForm()) 
-      {*/
+      {
         // Create an object for the survey participants data including all of their scores
         var surveyData = 
         {
@@ -375,10 +376,10 @@
     
             });*/
         });
-      });
-      /*else 
-      {
-        alert("Please fill out all fields before submitting!");
-      }
-    });*/
+    }
+    else 
+    {
+    alert("Please fill out all fields before submitting!");
+    }
+    });
 </script>

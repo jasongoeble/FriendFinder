@@ -306,6 +306,7 @@
 </html>
 
 <script type="text/javascript">
+//thank you to whomever coded the demo for Chosen 
 $(".chosen-select").chosen();
 
 $document.ready(function(){
@@ -366,7 +367,7 @@ $document.ready(function(){
         };
     
         //post the data via the API
-        $.post("/api/friends", surveyData, function() {
+        $.post("/api/friends", surveyData, function(data) {
         /*
               // Grab the result from the AJAX post so that the best match's name and photo are displayed.
               $("#match-name").text(data.name);

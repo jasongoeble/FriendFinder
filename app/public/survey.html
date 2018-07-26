@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Friend Finder</title>
+    <!-- reset style sheet -->
+    <link rel="stylesheet" href="../styling/reset.css">
+    <!-- jQuery library provided by Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <!-- Popper.js library provided by Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+        crossorigin="anonymous">
+    <!-- custom style sheet -->
+    <link rel="stylesheet" href="../styling/custom_styling.css">
+    <!-- Chosen -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
+</head>
+
+<body>
+<!-- credit is due to 16personalities.com for their question content -->
+<!-- discovering and learning about the Chosen.js plug for drop down goes to whomever coded the demo assignment -->
+    <div class="container">
+        <h2><strong>Survey Questions</strong></h2>
+        <hr>
+        <h3><strong>About You</strong></h3>
+        <h4>Name (Required)</h4>
+        <input type="text" id="name" placeholder="Your Username" required>
+        <h4>Link to Photo Image (Required)</h4>
+        <input type="text" id="photo" placeholder="http://...." required>
+        <hr>
+        <h3><strong>Question #1</strong></h3>
+        <h4>You find it difficult to introduce yourself to other people.</h4>
+        <select class="chosen-select" id="q1" style="width: 145px;">
+            <option value></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <div>
+            <div class="chosen-container chosen-container-single" id="q1_chosen" style="width: 145px;" title>
+                <div class="chosen-drop">
+                    <div class="chosen-search">
+                        <input type="text" autocomplete="off">
+                    </div>
+                    <ul class="chosen-results">
+                        <li class="active-result" data-option-array-index="1">1 (Strongly Disagree)</li>
+                        <li class="active-result" data-option-array-index="2">2</li>
+                        <li class="active-result" data-option-array-index="3">3</li>
+                        <li class="active-result" data-option-array-index="4">4</li>
+                        <li class="active-result" data-option-array-index="5">5 (Strongly Agree)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h3><strong>Question #2</strong></h3>
+        <h4>You often get so lost in thoughts that you ignore or forget your surroundings.</h4>
+        <select class="chosen-select" id="q2" style="width: 145px;">
+            <option value></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <div>
+            <div class="chosen-container chosen-container-single" id="q2_chosen" style="width: 145px;" title>
+                <div class="chosen-drop">
+                    <div class="chosen-search">
+                        <input type="text" autocomplete="off">
+                    </div>
+                    <ul class="chosen-results">
+                        <li class="active-result" data-option-array-index="1">1 (Strongly Disagree)</li>
+                        <li class="active-result" data-option-array-index="2">2</li>
+                        <li class="active-result" data-option-array-index="3">3</li>
+                        <li class="active-result" data-option-array-index="4">4</li>
+                        <li class="active-result" data-option-array-index="5">5 (Strongly Agree)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h3><strong>Question #3</strong></h3>
+        <h4>You try to respond to your e-mails as soon as possible and cannot stand a messy inbox.</h4>
+        <select class="chosen-select" id="q3" style="width: 145px;">
+            <option value></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <div>
+            <div class="chosen-container chosen-container-single" id="q3_chosen" style="width: 145px;" title>
+                <div class="chosen-drop">
+                    <div class="chosen-search">
+                        <input type="text" autocomplete="off">
+                    </div>
+                    <ul class="chosen-results">
+                        <li class="active-result" data-option-array-index="1">1 (Strongly Disagree)</li>
+                        <li class="active-result" data-option-array-index="2">2</li>
+                        <li class="active-result" data-option-array-index="3">3</li>
+                        <li class="active-result" data-option-array-index="4">4</li>
+                        <li class="active-result" data-option-array-index="5">5 (Strongly Agree)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h3><strong>Question #4</strong></h3>
+        <h4>You find it easy to stay relaxed even when there is some pressure.</h4>
+        <select class="chosen-select" id="q4" style="width: 145px;">
+            <option value></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <div>
+            <div class="chosen-container chosen-container-single" id="q4_chosen" style="width: 145px;" title>
+                <div class="chosen-drop">
+                    <div class="chosen-search">
+                        <input type="text" autocomplete="off">
+                    </div>
+                    <ul class="chosen-results">
+                        <li class="active-result" data-option-array-index="1">1 (Strongly Disagree)</li>
+                        <li class="active-result" data-option-array-index="2">2</li>
+                        <li class="active-result" data-option-array-index="3">3</li>
+                        <li class="active-result" data-option-array-index="4">4</li>
+                        <li class="active-result" data-option-array-index="5">5 (Strongly Agree)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h3><strong>Question #5</strong></h3>
+        <h4>You do not usually initiate conversations.</h4>
+        <select class="chosen-select" id="q5" style="width: 145px;">
+            <option value></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <div>
+            <div class="chosen-container chosen-container-single" id="q5_chosen" style="width: 145px;" title>
+                <div class="chosen-drop">
+                    <div class="chosen-search">
+                        <input type="text" autocomplete="off">
+                    </div>
+                    <ul class="chosen-results">
+                        <li class="active-result" data-option-array-index="1">1 (Strongly Disagree)</li>
+                        <li class="active-result" data-option-array-index="2">2</li>
+                        <li class="active-result" data-option-array-index="3">3</li>
+                        <li class="active-result" data-option-array-index="4">4</li>
+                        <li class="active-result" data-option-array-index="5">5 (Strongly Agree)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h3><strong>Question #6</strong></h3>
+        <h4>You rarely do something just out of sheer curiosity.</h4>
+        <select class="chosen-select" id="q6" style="width: 145px;">
+            <option value></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <div>
+            <div class="chosen-container chosen-container-single" id="q6_chosen" style="width: 145px;" title>
+                <div class="chosen-drop">
+                    <div class="chosen-search">
+                        <input type="text" autocomplete="off">
+                    </div>
+                    <ul class="chosen-results">
+                        <li class="active-result" data-option-array-index="1">1 (Strongly Disagree)</li>
+                        <li class="active-result" data-option-array-index="2">2</li>
+                        <li class="active-result" data-option-array-index="3">3</li>
+                        <li class="active-result" data-option-array-index="4">4</li>
+                        <li class="active-result" data-option-array-index="5">5 (Strongly Agree)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h3><strong>Question #7</strong></h3>
+        <h4>You feel superior to other people.</h4>
+        <select class="chosen-select" id="q7" style="width: 145px;">
+            <option value></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <div>
+            <div class="chosen-container chosen-container-single" id="q7_chosen" style="width: 145px;" title>
+                <div class="chosen-drop">
+                    <div class="chosen-search">
+                        <input type="text" autocomplete="off">
+                    </div>
+                    <ul class="chosen-results">
+                        <li class="active-result" data-option-array-index="1">1 (Strongly Disagree)</li>
+                        <li class="active-result" data-option-array-index="2">2</li>
+                        <li class="active-result" data-option-array-index="3">3</li>
+                        <li class="active-result" data-option-array-index="4">4</li>
+                        <li class="active-result" data-option-array-index="5">5 (Strongly Agree)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h3><strong>Question #8</strong></h3>
+        <h4>Being organized is more important to you than being adaptable.</h4>
+        <select class="chosen-select" id="q8" style="width: 145px;">
+            <option value></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <div>
+          <div class="chosen-container chosen-container-single" id="q8_chosen" style="width: 145px;" title>
+              <div class="chosen-drop">
+                  <div class="chosen-search">
+                      <input type="text" autocomplete="off">
+                  </div>
+                  <ul class="chosen-results">
+                      <li class="active-result" data-option-array-index="1">1 (Strongly Disagree)</li>
+                      <li class="active-result" data-option-array-index="2">2</li>
+                      <li class="active-result" data-option-array-index="3">3</li>
+                      <li class="active-result" data-option-array-index="4">4</li>
+                      <li class="active-result" data-option-array-index="5">5 (Strongly Agree)</li>
+                  </ul>
+              </div>
+          </div>
+        </div>
+        <h3><strong>Question #9</strong></h3>
+        <h4>You are usually highly motivated and energetic.</h4>
+        <select class="chosen-select" id="q9" style="width: 145px;">
+            <option value></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <div>
+          <div class="chosen-container chosen-container-single" id="q9_chosen" style="width: 145px;" title>
+              <div class="chosen-drop">
+                  <div class="chosen-search">
+                      <input type="text" autocomplete="off">
+                  </div>
+                  <ul class="chosen-results">
+                      <li class="active-result" data-option-array-index="1">1 (Strongly Disagree)</li>
+                      <li class="active-result" data-option-array-index="2">2</li>
+                      <li class="active-result" data-option-array-index="3">3</li>
+                      <li class="active-result" data-option-array-index="4">4</li>
+                      <li class="active-result" data-option-array-index="5">5 (Strongly Agree)</li>
+                  </ul>
+              </div>
+            </div>
+        </div>
+        <h3><strong>Question #10</strong></h3>
+        <h4>Winning a debate matters less to you than making sure no one gets upset.</h4>
+        <select class="chosen-select" id="q10" style="width: 145px;">
+            <option value></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <div>
+            <div class="chosen-container chosen-container-single" id="q10_chosen" style="width: 145px;" title>
+                <div class="chosen-drop">
+                    <div class="chosen-search">
+                        <input type="text" autocomplete="off">
+                    </div>
+                    <ul class="chosen-results">
+                        <li class="active-result" data-option-array-index="1">1 (Strongly Disagree)</li>
+                        <li class="active-result" data-option-array-index="2">2</li>
+                        <li class="active-result" data-option-array-index="3">3</li>
+                        <li class="active-result" data-option-array-index="4">4</li>
+                        <li class="active-result" data-option-array-index="5">5 (Strongly Agree)</li>
+                    </ul>
+                </div>
+            </div>
+            <a href="/survey">
+                <button type="button" class="btn btn-secondary" id="submit">Submit</button>
+            </a>
+        </div>
+        </div>
+
+  <script type="text/javascript">
+
+    $(".chosen-select").chosen();
+
+    $(".submit").on("click", function(event) 
+    {
+      event.preventDefault();
+
+      // Form validation
+      function validateForm() 
+      {
+        varvValid = true;
+        //checks that the to two form fields at the top of the survey are not empty
+        $(".form-control").each(function() 
+        {
+          if ($(this).val() === "") 
+          {
+            valid = false;
+          }
+        });
+    
+        //checks that each of the drop down fields are not empty
+        $(".chosen-select").each(function() 
+        {
+          if ($(this).val() === "") 
+          {
+            valid = false;
+          }
+        });
+
+        //returns boolean value of true or false, everything good or something is missing
+        return isValid;
+      }
+    
+      //if isValid is true
+      if (validateForm()) 
+      {
+        // Create an object for the survey participants data including all of their scores
+        var surveyData = 
+        {
+          name: $("#name").val(),
+          photo: $("#photo").val(),
+          scores: [
+            $("#q1").val(),
+            $("#q2").val(),
+            $("#q3").val(),
+            $("#q4").val(),
+            $("#q5").val(),
+            $("#q6").val(),
+            $("#q7").val(),
+            $("#q8").val(),
+            $("#q9").val(),
+            $("#q10").val()
+          ]
+        };
+    
+        //post the data via the API
+        $.post("/api/friends", surveyData, function(data) {
+        /*
+              // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+              $("#match-name").text(data.name);
+              $("#match-img").attr("src", data.photo);
+    
+              // Show the modal with the best match
+              $("#results-modal").modal("toggle");
+    
+            });*/
+        });
+      }
+      else 
+      {
+        alert("Please fill out all fields before submitting!");
+      }
+    });
+</script>
+  
+</body>
+
+</html>

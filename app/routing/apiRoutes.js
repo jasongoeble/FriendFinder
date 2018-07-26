@@ -1,5 +1,5 @@
 //declare dependancy for friends.js data file
-var friendsContainer = require("../data/friends");
+var friendsContainer = require("../data/friends.js");
 
 //credit to james for explaining the module.exports
 module.exports = function (app){
